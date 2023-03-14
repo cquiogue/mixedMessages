@@ -9,18 +9,20 @@ const ffMessages = {
 };
 
 let mergeMessages = [];
+let charName = " ";
 
 for (let prop in ffMessages) {
     let index = randomNumberGenerator(ffMessages[prop].length);
     switch (prop) {
         case 'name':
             mergeMessages.push(`${ffMessages[prop][index]} gets ready for battle.`);
+            charName = ffMessages[prop][index];
             break;
         case 'attack':
-            mergeMessages.push(`Uses ${ffMessages[prop][index]}!`);
+            mergeMessages.push(`${charName} uses ${ffMessages[prop][index]}!`);
             break;
         case 'quote':
-            mergeMessages.push(`"${ffMessages[prop][index]}"`);
+            mergeMessages.push(`${charName} says, "${ffMessages[prop][index]}"`);
             break;
         default:
             mergeMessages.push(`Not enough info`);
