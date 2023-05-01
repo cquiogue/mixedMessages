@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'FF', Arial, sans-serif;
-  src: url('fonts/finalfantasy.ttf');
+  font-family: 'Final Fantasy';
+  src: url('fonts/New.woff2') format('woff2'),
+    url('fonts/New.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -21,9 +25,11 @@ body {
 }
 
 h1 {
-  font-family: 'FF' !important;
-  font-size: 36px;
+  font-family: 'Final Fantasy' !important;
+  font-weight: 50;
+  font-size: 48px;
   margin-bottom: 40px;
+  text-shadow: 2px 2px #000;
 }
 
 #message-container {
@@ -33,7 +39,7 @@ h1 {
 #message {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #444;
+  background-color: #384a52;
   border-radius: 10px;
   font-size: 24px;
   text-align: center;
@@ -50,16 +56,17 @@ h1 {
 button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #e74c3c;
+  background-color: #00bf89;
   border: none;
-  border-radius: 5px;
-  color: #fff;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #c0392b;
+  background-color: #006f50;
 }
 
 .visible {
