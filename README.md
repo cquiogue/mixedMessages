@@ -1,6 +1,6 @@
 # Final Fantasy Character Battle Quote Generator
 
-Generates a random character, attack and win quote.
+Generates a random character, attack and win quote. Simple page using no frameworks and just vanilla HTML, CSS and JavaScript. Started as a plain Javascript project from Codecademy and I decided to make it a web page.
 
 ## Features:
 
@@ -10,5 +10,4 @@ Generates a random character, attack and win quote.
 
 ## Upcoming:
 
-- Make the color scheme more fitting to Final Fantasy
 - Messages displayed in a chat bubble
